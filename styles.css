@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-color: rgb(204, 204, 204);
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+}
+body{
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+    .bg{
+
+        background-image: url(./assets/back3.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: cover;
+        top: 0;
+        left: 0;
+
+    }
+
+
+/* 
+body {
+    background-image: url(./assets/back3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+
+} */
+
+main {
+
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo-side img {
+    width: 120px;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 174, 255);
+}
+
+nav .links-side {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav .links-side a {
+
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+main .section-banner {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(./assets/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+
+}
+
+.section-banner .mascara-banner {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+}
+
+.section-banner .title-banner {
+    z-index: 1;
+
+}
+
+.section-banner .title-banner h1 {
+    text-shadow: 2px 3px 8px black;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.section-banner .title-banner span {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4193ff;
+    text-shadow: 2px 3px 8px black;
+}
+
+.section-banner .start-btn {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, #81b3ff, #649bf8, #4782ef, #2c6ae4, #0c50d8);
+
+}
+
+.section-destaques {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.lista-destaques {
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+    gap: 20px;
+    
+}
+
+.lista-destaques .item-destaque {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+
+.item-destaque img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 80%;
+    height: 200px;
+
+}
+
+.item-destaque span {
+    margin: 5px auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0c50d8;
+}
+
+.item-destaque p {
+    font-weight: 600;
+    max-width: 70%;
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+
+}
+
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.swiper {
+   box-shadow: 0 0 10px #2c6ae4;
+    border: 3px solid #2c6ae4;
+    border-radius: 10px;
+    margin-top: 30px;
+    width: 45%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-cardapio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.cardapio-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    color: rgb(0, 122, 192);
+
+
+}
+
+
+.cardapio-card img {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #0c50d8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0c50d8;
+}
