@@ -15,3 +15,5 @@ let swiper = new Swiper(".mySwiper", {
 lightGallery(document.querySelector('#cardapio1'))
 lightGallery(document.querySelector('#cardapio2'))
 lightGallery(document.querySelector('#cardapio3'))
+
+lightGallery(document.querySelector('.lista-destaques'))
